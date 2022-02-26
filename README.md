@@ -2,7 +2,7 @@
 
 My own version of the well-known "Cature record in update set" feature.
 
-Extra features included:
+Features included:
 
 - Toggle on/off property allowing to disable the feature in the production environment.
 - Commit/discard changes made in the record before being captured in the update set.
