@@ -11,27 +11,32 @@ Extra features included:
 
 ## Installation
 
-- Update set capture_record_in_update_set.xml
+- Update set `capture_record_in_update_set.xml`
 
 
 ## Technical solution
 
 ### Script includes
 
-- CaptureRecordInUpdateSet: Backend utilities used by the feature.
-- CaptureRecordInUpdateSetAjax: Bridge Client-Server. Necessary to capture multiple records at a time.
+- `CaptureRecordUtils()`: Contains the logic of the application. Client callable script.
 
 ### System properties
 
 | Property name | Description |
 | ------------- | ----------- |
-| _x.capture_file_uset.active | Toggle on/off |
-| _x.capture_file_uset.exclude_app_file | Include/exclude tables extending sys_metadata |
-| _x.capture_file_uset.commit_before | Commit/discard changes before capturing |
+| `u_capture_record.active` | Toggle on/off |
+| `u_capture_record.exclude_app_file` | Include/exclude tables extending sys_metadata |
+| `u_capture_record.commit_before` | Commit/discard changes before capturing |
 
 ### UI Messages
 
-- _x.capture_file_uset.ok: Displayed as an info message once the record has been captured.
+- `u_capture_record.success`: Confirmation message displayed after capturing.
 
 ### UI Actions
 
+**`u_capture_record_form`**
+
+Form view action. Shown only to *admin* users and records NOT extending `sys_metadata` table. If the system property `u_capture_record.exclude_app_file` value is `true`, it is displayed also to records extending `sys_metadata` table.
+
+**`u_capture_record_list`**
+List view action. Shown only to *admin* users.
