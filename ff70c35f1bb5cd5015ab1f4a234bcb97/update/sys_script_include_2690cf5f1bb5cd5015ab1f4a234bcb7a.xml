@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>global.CaptureRecordUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>Bunch of functions used by the app</description>
+        <name>CaptureRecordUtils</name>
+        <script><![CDATA[var CaptureRecordUtils = Class.create();
+CaptureRecordUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+  /**SNDOC
+    @name captureSingleRecord
+    @description Captures a GlideRecord in the current update set. Displays a success notification.
+    @param {GlideRecord} [grInputRecord] - The GlideRecord to be captured
+  */
+  captureSingleRecord: function (grRecord) {
+    this._captureRecord(grRecord);
+    this._displaySuccess();
+  },
+
+  /**SNDOC
+    @name captureMultipleRecords
+    @description Capture multiple GlideRecords in the current update set. Displays a success notification.
+    @param {String} [ids] - Comma-separated list of sys_id's
+    @param {String} [tableName] - Table which ids belong to
+  */
+  captureMultipleRecords: function (ids, tableName) {
+    var arrIDs = ids.split(',');
+    for (var i = 0; i < arrIDs.length; i++) {
+      var grRecord = new GlideRecord(tableName);
+      grRecord.get(arrIDs[i]) ? this._captureRecord(grRecord) : undefined;
+    }
+    this._displaySuccess();
+  },
+
+  /**SNDOC
+    @name clientBridge
+    @description Client </> Server interface. Calls server-side function captureMultipleRecords().
+  */
+  clientBridge: function () {
+    var ids = this.getParameter('sysparm_sys_ids');
+    var tableName = this.getParameter('sysparm_table_name');
+    this.captureMultipleRecords(ids, tableName);
+  },
+
+  /**SNDOC
+    @name _captureRecord
+    @description Capture the passed in record in the current update set for the logged-in user. If the system property 'u_capture_record.commit_before' value is true, updates the GlideRecord before committing.
+    @param {GlideRecord} [grInputRecord] - The GlideRecord to be captured
+    @private
+  */
+  _captureRecord: function (grRecord) {
+    // Commit changes before capture
+    gs.getProperty('u_capture_record.commit_before', 'false') === 'true' ? grRecord.update() : '';
+
+    // Push the record into the update set
+    new GlideUpdateManager2().saveRecord(grRecord);
+  },
+
+  /**SNDOC
+    @name _displaySuccess
+    @description Display a success notification containing the current update set name and link. Uses the UI message 'u_capture_record.success'.
+    @private
+  */
+  _displaySuccess: function () {
+    // Get current update set
+    var currentUpdateSetId = gs.getPreference('sys_update_set');
+    var grUpdateSet = new GlideRecord('sys_update_set');
+    grUpdateSet.get(currentUpdateSetId);
+
+    // Display info message
+    var msg = gs.getMessage('u_capture_record.success', [grUpdateSet.getDisplayValue(), grUpdateSet.getLink()]);
+    gs.addInfoMessage(msg);
+  },
+
+  type: 'CaptureRecordUtils'
+});
+
+CaptureRecordUtils.refQualifier = function (grRecord) {
+  // Feature enabled/disabled
+  if (gs.getProperty('u_capture_record.active', 'false') !== 'true') {
+    return false;
+  }
+
+  // Extends sys_metadata
+  grDatabase = new GlideRecord('sys_db_object');
+  grDatabase.get('name', grRecord.getTableName());
+
+  if (gs.getProperty('u_capture_record.exclude_app_file', 'true') === 'true' && grDatabase.super_class.name.toString() === 'sys_metadata') {
+    return false;
+  }
+
+  return true;
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>alealvar</sys_created_by>
+        <sys_created_on>2022-02-26 11:55:42</sys_created_on>
+        <sys_id>2690cf5f1bb5cd5015ab1f4a234bcb7a</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>CaptureRecordUtils</sys_name>
+        <sys_package display_value="Capture Record" source="ff70c35f1bb5cd5015ab1f4a234bcb97">ff70c35f1bb5cd5015ab1f4a234bcb97</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Capture Record">ff70c35f1bb5cd5015ab1f4a234bcb97</sys_scope>
+        <sys_update_name>sys_script_include_2690cf5f1bb5cd5015ab1f4a234bcb7a</sys_update_name>
+        <sys_updated_by>alealvar</sys_updated_by>
+        <sys_updated_on>2022-02-26 13:08:09</sys_updated_on>
+    </sys_script_include>
+</record_update>
