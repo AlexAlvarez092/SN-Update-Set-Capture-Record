@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2022-03-12 13:25:13">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Capture records in current update set</description>
+<inserted/>
+<name>Capture Record</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>a19117f71b828d1015ab1f4a234bcbe9</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>alealvar</sys_created_by>
+<sys_created_on>2022-03-12 13:25:12</sys_created_on>
+<sys_id>859b17f31bc28d1015ab1f4a234bcb32</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>alealvar</sys_updated_by>
+<sys_updated_on>2022-03-12 13:25:12</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Capture Record">ff70c35f1bb5cd5015ab1f4a234bcb97</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_message_cae40b571bf5cd5015ab1f4a234bcb10</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message"><sys_ui_message action="INSERT_OR_UPDATE"><application/><code/><commented_message/><key>u_capture_record.success</key><language>en</language><message>Record(s) captured in &lt;a href="/{1}"&gt;{0}&lt;/a&gt; update set.</message><sys_class_name>sys_ui_message</sys_class_name><sys_created_by>alealvar</sys_created_by><sys_created_on>2022-02-26 12:13:30</sys_created_on><sys_id>cae40b571bf5cd5015ab1f4a234bcb10</sys_id><sys_mod_count>1</sys_mod_count><sys_name>u_capture_record.success</sys_name><sys_package display_value="Capture Record" source="ff70c35f1bb5cd5015ab1f4a234bcb97">ff70c35f1bb5cd5015ab1f4a234bcb97</sys_package><sys_policy/><sys_scope display_value="Capture Record">ff70c35f1bb5cd5015ab1f4a234bcb97</sys_scope><sys_update_name>sys_ui_message_cae40b571bf5cd5015ab1f4a234bcb10</sys_update_name><sys_updated_by>alealvar</sys_updated_by><sys_updated_on>2022-02-26 12:14:35</sys_updated_on></sys_ui_message></record_update>]]></payload>
+<payload_hash>723697763</payload_hash>
+<remote_update_set display_value="Capture Record">859b17f31bc28d1015ab1f4a234bcb32</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>alealvar</sys_created_by>
+<sys_created_on>2022-03-12 13:25:12</sys_created_on>
+<sys_id>059b17f31bc28d1015ab1f4a234bcb34</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17f7e26006f0000001</sys_recorded_at>
+<sys_updated_by>alealvar</sys_updated_by>
+<sys_updated_on>2022-03-12 13:25:12</sys_updated_on>
+<table/>
+<target_name>u_capture_record.success</target_name>
+<type>Message</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Capture Record">ff70c35f1bb5cd5015ab1f4a234bcb97</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_076d87131b39cd5015ab1f4a234bcb54</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;u_capture_record_list&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition/&gt;&lt;form_action&gt;false&lt;/form_action&gt;&lt;form_button&gt;false&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;false&lt;/format_for_configurable_workspace&gt;&lt;hint&gt;Capture the selected records in the current update set&lt;/hint&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;list_action&gt;true&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;true&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Capture in current Update Set&lt;/name&gt;&lt;onclick&gt;captureThem()&lt;/onclick&gt;&lt;order&gt;10000&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function captureThem() {
+    var gaCapture = new GlideAjax('CaptureRecordUtils');
+    gaCapture.addParam('sysparm_name', 'clientBridge');
+    gaCapture.addParam('sysparm_sys_ids', g_list.getChecked());
+    gaCapture.addParam('sysparm_table_name', g_list.getTableName());
+    gaCapture.getXML();
+}]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;alealvar&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-02-26 12:50:42&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;076d87131b39cd5015ab1f4a234bcb54&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Capture in current Update Set&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Capture Record" source="ff70c35f1bb5cd5015ab1f4a234bcb97"&gt;ff70c35f1bb5cd5015ab1f4a234bcb97&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Capture Record"&gt;ff70c35f1bb5cd5015ab1f4a234bcb97&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_076d87131b39cd5015ab1f4a234bcb54&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;alealvar&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-02-26 12:50:42&lt;/sys_updated_on&gt;&lt;table&gt;global&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1715222847</payload_hash>
+<remote_update_set display_value="Capture Record">859b17f31bc28d1015ab1f4a234bcb32</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>alealvar</sys_created_by>
+<sys_created_on>2022-03-12 13:25:12</sys_created_on>
+<sys_id>099b17f31bc28d1015ab1f4a234bcb33</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17f7e2600780000001</sys_recorded_at>
+<sys_updated_by>alealvar</sys_updated_by>
+<sys_updated_on>2022-03-12 13:25:12</sys_updated_on>
+<table>global</table>
+<target_name>Capture in current Update Set</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Capture Record">ff70c35f1bb5cd5015ab1f4a234bcb97</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_73749bd31b79cd5015ab1f4a234bcb6c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Include / Exclude tables extending Application File</description><ignore_cache>true</ignore_cache><is_private>false</is_private><name>u_capture_record.exclude_app_file</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>alealvar</sys_created_by><sys_created_on>2022-02-26 13:21:36</sys_created_on><sys_id>73749bd31b79cd5015ab1f4a234bcb6c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_capture_record.exclude_app_file</sys_name><sys_package display_value="Capture Record" source="ff70c35f1bb5cd5015ab1f4a234bcb97">ff70c35f1bb5cd5015ab1f4a234bcb97</sys_package><sys_policy/><sys_scope display_value="Capture Record">ff70c35f1bb5cd5015ab1f4a234bcb97</sys_scope><sys_update_name>sys_properties_73749bd31b79cd5015ab1f4a234bcb6c</sys_update_name><sys_updated_by>alealvar</sys_updated_by><sys_updated_on>2022-02-26 13:21:36</sys_updated_on><type>boolean</type><value>true</value><write_roles>admin</write_roles></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=73749bd31b79cd5015ab1f4a234bcb6c"/></record_update>]]></payload>
+<payload_hash>661470228</payload_hash>
+<remote_update_set display_value="Capture Record">859b17f31bc28d1015ab1f4a234bcb32</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>alealvar</sys_created_by>
+<sys_created_on>2022-03-12 13:25:12</sys_created_on>
+<sys_id>0d9b17f31bc28d1015ab1f4a234bcb32</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17f7e2600ad0000001</sys_recorded_at>
+<sys_updated_by>alealvar</sys_updated_by>
+<sys_updated_on>2022-03-12 13:25:12</sys_updated_on>
+<table/>
+<target_name>u_capture_record.exclude_app_file</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Capture Record">ff70c35f1bb5cd5015ab1f4a234bcb97</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_role_b4cd83d31b39cd5015ab1f4a234bcbb3</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role"><sys_ui_action_role action="INSERT_OR_UPDATE"><sys_class_name>sys_ui_action_role</sys_class_name><sys_created_by>alealvar</sys_created_by><sys_created_on>2022-02-26 12:53:02</sys_created_on><sys_id>b4cd83d31b39cd5015ab1f4a234bcbb3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Capture in current Update Set.admin</sys_name><sys_package display_value="Capture Record" source="ff70c35f1bb5cd5015ab1f4a234bcb97">ff70c35f1bb5cd5015ab1f4a234bcb97</sys_package><sys_policy/><sys_scope display_value="Capture Record">ff70c35f1bb5cd5015ab1f4a234bcb97</sys_scope><sys_ui_action display_value="Capture in current Update Set">951c83db1bf5cd5015ab1f4a234bcb49</sys_ui_action><sys_update_name>sys_ui_action_role_b4cd83d31b39cd5015ab1f4a234bcbb3</sys_update_name><sys_updated_by>alealvar</sys_updated_by><sys_updated_on>2022-02-26 12:53:02</sys_updated_on><sys_user_role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</sys_user_role></sys_ui_action_role></record_update>]]></payload>
+<payload_hash>-411866392</payload_hash>
+<remote_update_set display_value="Capture Record">859b17f31bc28d1015ab1f4a234bcb32</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>alealvar</sys_created_by>
+<sys_created_on>2022-03-12 13:25:12</sys_created_on>
+<sys_id>419b17f31bc28d1015ab1f4a234bcb34</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17f7e2600800000001</sys_recorded_at>
+<sys_updated_by>alealvar</sys_updated_by>
+<sys_updated_on>2022-03-12 13:25:12</sys_updated_on>
+<table/>
+<target_name>Capture in current Update Set.admin</target_name>
+<type>UI Action Role</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Capture Record">ff70c35f1bb5cd5015ab1f4a234bcb97</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_2690cf5f1bb5cd5015ab1f4a234bcb7a</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.CaptureRecordUtils&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description&gt;Bunch of functions used by the app&lt;/description&gt;&lt;name&gt;CaptureRecordUtils&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var CaptureRecordUtils = Class.create();
+CaptureRecordUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+  /**SNDOC
+    @name captureSingleRecord
+    @description Captures a GlideRecord in the current update set. Displays a success notification.
+    @param {GlideRecord} [grInputRecord] - The GlideRecord to be captured
+  */
+  captureSingleRecord: function (grRecord) {
+    this._captureRecord(grRecord);
+    this._displaySuccess();
+  },
+
+  /**SNDOC
+    @name captureMultipleRecords
+    @description Capture multiple GlideRecords in the current update set. Displays a success notification.
+    @param {String} [ids] - Comma-separated list of sys_id's
+    @param {String} [tableName] - Table which ids belong to
+  */
+  captureMultipleRecords: function (ids, tableName) {
+    var arrIDs = ids.split(',');
+    for (var i = 0; i &lt; arrIDs.length; i++) {
+      var grRecord = new GlideRecord(tableName);
+      grRecord.get(arrIDs[i]) ? this._captureRecord(grRecord) : undefined;
+    }
+    this._displaySuccess();
+  },
+
+  /**SNDOC
+    @name clientBridge
+    @description Client &lt;/&gt; Server interface. Calls server-side function captureMultipleRecords().
+  */
+  clientBridge: function () {
+    var ids = this.getParameter('sysparm_sys_ids');
+    var tableName = this.getParameter('sysparm_table_name');
+    this.captureMultipleRecords(ids, tableName);
+  },
+
+  /**SNDOC
+    @name _captureRecord
+    @description Capture the passed in record in the current update set for the logged-in user. If the system property 'u_capture_record.commit_before' value is true, updates the GlideRecord before committing.
+    @param {GlideRecord} [grInputRecord] - The GlideRecord to be captured
+    @private
+  */
+  _captureRecord: function (grRecord) {
+    // Commit changes before capture
+    gs.getProperty('u_capture_record.commit_before', 'false') === 'true' ? grRecord.update() : '';
+
+    // Push the record into the update set
+    new GlideUpdateManager2().saveRecord(grRecord);
+  },
+
+  /**SNDOC
+    @name _displaySuccess
+    @description Display a success notification containing the current update set name and link. Uses the UI message 'u_capture_record.success'.
+    @private
+  */
+  _displaySuccess: function () {
+    // Get current update set
+    var currentUpdateSetId = gs.getPreference('sys_update_set');
+    var grUpdateSet = new GlideRecord('sys_update_set');
+    grUpdateSet.get(currentUpdateSetId);
+
+    // Display info message
+    var msg = gs.getMessage('u_capture_record.success', [grUpdateSet.getDisplayValue(), grUpdateSet.getLink()]);
+    gs.addInfoMessage(msg);
+  },
+
+  type: 'CaptureRecordUtils'
+});
+
+CaptureRecordUtils.refQualifier = function (grRecord) {
+  // Feature enabled/disabled
+  if (gs.getProperty('u_capture_record.active', 'false') !== 'true') {
+    return false;
+  }
+
+  // Extends sys_metadata
+  grDatabase = new GlideRecord('sys_db_object');
+  grDatabase.get('name', grRecord.getTableName());
+
+  if (gs.getProperty('dev_tools.capture_file.exclude_app_file', 'true') === 'true' &amp;&amp; grDatabase.super_class.name.toString() === 'sys_metadata') {
+    return false;
+  }
+
+  return true;
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;alealvar&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-02-26 11:55:42&lt;/sys_created_on&gt;&lt;sys_id&gt;2690cf5f1bb5cd5015ab1f4a234bcb7a&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;CaptureRecordUtils&lt;/sys_name&gt;&lt;sys_package display_value="Capture Record" source="ff70c35f1bb5cd5015ab1f4a234bcb97"&gt;ff70c35f1bb5cd5015ab1f4a234bcb97&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Capture Record"&gt;ff70c35f1bb5cd5015ab1f4a234bcb97&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_2690cf5f1bb5cd5015ab1f4a234bcb7a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;alealvar&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-02-26 13:01:25&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1425265627</payload_hash>
+<remote_update_set display_value="Capture Record">859b17f31bc28d1015ab1f4a234bcb32</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>alealvar</sys_created_by>
+<sys_created_on>2022-03-12 13:25:12</sys_created_on>
+<sys_id>459b17f31bc28d1015ab1f4a234bcb33</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17f7e2600930000001</sys_recorded_at>
+<sys_updated_by>alealvar</sys_updated_by>
+<sys_updated_on>2022-03-12 13:25:12</sys_updated_on>
+<table/>
+<target_name>CaptureRecordUtils</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Capture Record">ff70c35f1bb5cd5015ab1f4a234bcb97</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_ff70c35f1bb5cd5015ab1f4a234bcb97</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app"><sys_app action="INSERT_OR_UPDATE"><active>true</active><can_edit_in_studio>true</can_edit_in_studio><enforce_license>log</enforce_license><guided_setup_guid/><hide_on_ui>false</hide_on_ui><installed_as_dependency>false</installed_as_dependency><js_level>helsinki_es5</js_level><licensable>true</licensable><license/><license_category>none</license_category><license_definition/><license_model>none</license_model><logo/><menu/><name>Capture Record</name><private>false</private><restrict_table_access>false</restrict_table_access><runtime_access_tracking>permissive</runtime_access_tracking><scope>global</scope><scoped_administration>false</scoped_administration><short_description>Capture records in current update set</short_description><source>ff70c35f1bb5cd5015ab1f4a234bcb97</source><store_correlation_id/><store_url/><sys_class_name>sys_app</sys_class_name><sys_code/><sys_created_by>alealvar</sys_created_by><sys_created_on>2022-02-26 11:54:14</sys_created_on><sys_id>ff70c35f1bb5cd5015ab1f4a234bcb97</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>alealvar</sys_updated_by><sys_updated_on>2022-02-26 13:17:35</sys_updated_on><template/><trackable>true</trackable><uninstall_blocked>false</uninstall_blocked><user_role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</user_role><vendor/><vendor_prefix/><version>1.0.0</version></sys_app></record_update>]]></payload>
+<payload_hash>-1438756183</payload_hash>
+<remote_update_set display_value="Capture Record">859b17f31bc28d1015ab1f4a234bcb32</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>alealvar</sys_created_by>
+<sys_created_on>2022-03-12 13:25:12</sys_created_on>
+<sys_id>499b17f31bc28d1015ab1f4a234bcb32</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17f7e2600650000001</sys_recorded_at>
+<sys_updated_by>alealvar</sys_updated_by>
+<sys_updated_on>2022-03-12 13:25:12</sys_updated_on>
+<table/>
+<target_name>Capture Record</target_name>
+<type>Custom Application</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Capture Record">ff70c35f1bb5cd5015ab1f4a234bcb97</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_ec74d7d31b79cd5015ab1f4a234bcbc0</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Enable / disable the feature</description><ignore_cache>true</ignore_cache><is_private>false</is_private><name>u_capture_record.active</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>alealvar</sys_created_by><sys_created_on>2022-02-26 13:21:23</sys_created_on><sys_id>ec74d7d31b79cd5015ab1f4a234bcbc0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_capture_record.active</sys_name><sys_package display_value="Capture Record" source="ff70c35f1bb5cd5015ab1f4a234bcb97">ff70c35f1bb5cd5015ab1f4a234bcb97</sys_package><sys_policy/><sys_scope display_value="Capture Record">ff70c35f1bb5cd5015ab1f4a234bcb97</sys_scope><sys_update_name>sys_properties_ec74d7d31b79cd5015ab1f4a234bcbc0</sys_update_name><sys_updated_by>alealvar</sys_updated_by><sys_updated_on>2022-02-26 13:21:23</sys_updated_on><type>boolean</type><value>true</value><write_roles>admin</write_roles></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=ec74d7d31b79cd5015ab1f4a234bcbc0"/></record_update>]]></payload>
+<payload_hash>-1527281241</payload_hash>
+<remote_update_set display_value="Capture Record">859b17f31bc28d1015ab1f4a234bcb32</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>alealvar</sys_created_by>
+<sys_created_on>2022-03-12 13:25:12</sys_created_on>
+<sys_id>819b17f31bc28d1015ab1f4a234bcb33</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17f7e2600a00000001</sys_recorded_at>
+<sys_updated_by>alealvar</sys_updated_by>
+<sys_updated_on>2022-03-12 13:25:12</sys_updated_on>
+<table/>
+<target_name>u_capture_record.active</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Capture Record">ff70c35f1bb5cd5015ab1f4a234bcb97</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_role_a4f497571b79cd5015ab1f4a234bcbe6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role"><sys_ui_action_role action="INSERT_OR_UPDATE"><sys_class_name>sys_ui_action_role</sys_class_name><sys_created_by>alealvar</sys_created_by><sys_created_on>2022-02-26 13:23:46</sys_created_on><sys_id>a4f497571b79cd5015ab1f4a234bcbe6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Capture in current Update Set.admin</sys_name><sys_package display_value="Capture Record" source="ff70c35f1bb5cd5015ab1f4a234bcb97">ff70c35f1bb5cd5015ab1f4a234bcb97</sys_package><sys_policy/><sys_scope display_value="Capture Record">ff70c35f1bb5cd5015ab1f4a234bcb97</sys_scope><sys_ui_action display_value="Capture in current Update Set">076d87131b39cd5015ab1f4a234bcb54</sys_ui_action><sys_update_name>sys_ui_action_role_a4f497571b79cd5015ab1f4a234bcbe6</sys_update_name><sys_updated_by>alealvar</sys_updated_by><sys_updated_on>2022-02-26 13:23:46</sys_updated_on><sys_user_role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</sys_user_role></sys_ui_action_role></record_update>]]></payload>
+<payload_hash>843322760</payload_hash>
+<remote_update_set display_value="Capture Record">859b17f31bc28d1015ab1f4a234bcb32</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>alealvar</sys_created_by>
+<sys_created_on>2022-03-12 13:25:12</sys_created_on>
+<sys_id>8d9b17f31bc28d1015ab1f4a234bcb33</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17f7e2600c10000001</sys_recorded_at>
+<sys_updated_by>alealvar</sys_updated_by>
+<sys_updated_on>2022-03-12 13:25:12</sys_updated_on>
+<table/>
+<target_name>Capture in current Update Set.admin</target_name>
+<type>UI Action Role</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Capture Record">ff70c35f1bb5cd5015ab1f4a234bcb97</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_951c83db1bf5cd5015ab1f4a234bcb49</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;u_capture_record_form&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;false&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition&gt;CaptureRecordUtils.refQualifier(current);&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;false&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;true&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style&gt;primary&lt;/form_style&gt;&lt;format_for_configurable_workspace&gt;false&lt;/format_for_configurable_workspace&gt;&lt;hint&gt;Capture the current record in the current update set&lt;/hint&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Capture in current Update Set&lt;/name&gt;&lt;onclick/&gt;&lt;order&gt;10000&lt;/order&gt;&lt;script&gt;&lt;![CDATA[new CaptureRecordUtils().captureSingleRecord(current);]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;alealvar&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-02-26 12:44:51&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;951c83db1bf5cd5015ab1f4a234bcb49&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Capture in current Update Set&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Capture Record" source="ff70c35f1bb5cd5015ab1f4a234bcb97"&gt;ff70c35f1bb5cd5015ab1f4a234bcb97&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Capture Record"&gt;ff70c35f1bb5cd5015ab1f4a234bcb97&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_951c83db1bf5cd5015ab1f4a234bcb49&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;alealvar&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-02-26 13:01:21&lt;/sys_updated_on&gt;&lt;table&gt;global&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1632046470</payload_hash>
+<remote_update_set display_value="Capture Record">859b17f31bc28d1015ab1f4a234bcb32</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>alealvar</sys_created_by>
+<sys_created_on>2022-03-12 13:25:12</sys_created_on>
+<sys_id>c99b17f31bc28d1015ab1f4a234bcb33</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17f7e2600890000001</sys_recorded_at>
+<sys_updated_by>alealvar</sys_updated_by>
+<sys_updated_on>2022-03-12 13:25:12</sys_updated_on>
+<table>global</table>
+<target_name>Capture in current Update Set</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Capture Record">ff70c35f1bb5cd5015ab1f4a234bcb97</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_c1941b571b79cd5015ab1f4a234bcb90</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Commit changes before capture record</description><ignore_cache>true</ignore_cache><is_private>false</is_private><name>u_capture_record.commit_before</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>alealvar</sys_created_by><sys_created_on>2022-02-26 13:21:58</sys_created_on><sys_id>c1941b571b79cd5015ab1f4a234bcb90</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_capture_record.commit_before</sys_name><sys_package display_value="Capture Record" source="ff70c35f1bb5cd5015ab1f4a234bcb97">ff70c35f1bb5cd5015ab1f4a234bcb97</sys_package><sys_policy/><sys_scope display_value="Capture Record">ff70c35f1bb5cd5015ab1f4a234bcb97</sys_scope><sys_update_name>sys_properties_c1941b571b79cd5015ab1f4a234bcb90</sys_update_name><sys_updated_by>alealvar</sys_updated_by><sys_updated_on>2022-02-26 13:21:58</sys_updated_on><type>boolean</type><value>false</value><write_roles>admin</write_roles></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=c1941b571b79cd5015ab1f4a234bcb90"/></record_update>]]></payload>
+<payload_hash>1347567439</payload_hash>
+<remote_update_set display_value="Capture Record">859b17f31bc28d1015ab1f4a234bcb32</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>alealvar</sys_created_by>
+<sys_created_on>2022-03-12 13:25:12</sys_created_on>
+<sys_id>cd9b17f31bc28d1015ab1f4a234bcb32</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>17f7e2600b50000001</sys_recorded_at>
+<sys_updated_by>alealvar</sys_updated_by>
+<sys_updated_on>2022-03-12 13:25:12</sys_updated_on>
+<table/>
+<target_name>u_capture_record.commit_before</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

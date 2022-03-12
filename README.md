@@ -15,6 +15,11 @@ Features included:
 - Capture multiple records from the list view at a time.
 - Include/exclude tables extending sys_metadata. Most of them are yet captured by default.
 
+# Installation
+
+- Option 1. Cloning repository
+- Option 2. Committing [update set](./releases/capture_update_set_100.xml)
+
 ## Technical solution
 
 ### Script includes
