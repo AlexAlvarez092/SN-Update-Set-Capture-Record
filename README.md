@@ -20,35 +20,6 @@ Features included:
 - Option 1. Cloning repository
 - Option 2. Committing [update set](./releases/capture_update_set_100.xml)
 
-## Technical solution
-
-### Script includes
-
-- `CaptureRecordUtils()`: Contains the logic of the application. Client callable script.
-
-### System properties
-
-| Property name | Description |
-| ------------- | ----------- |
-| `u_capture_record.active` | Toggle on/off |
-| `u_capture_record.exclude_app_file` | Include/exclude tables extending sys_metadata |
-| `u_capture_record.commit_before` | Commit/discard changes before capturing |
-
-### UI Messages
-
-- `u_capture_record.success`: Confirmation message displayed after capturing.
-
-### UI Actions
-
-**`u_capture_record_form`**
-
-Form view action. Shown only to *admin* users and records NOT extending `sys_metadata` table. If the system property `u_capture_record.exclude_app_file` value is `true`, it is displayed also to records extending `sys_metadata` table.
-
-**`u_capture_record_list`**
-
-List view action. Shown only to *admin* users.
-
-
 [contributors-shield]: https://img.shields.io/github/contributors/AlexAlvarez092/SN-Capture-Records-Update-Set.svg?style=for-the-badge
 [contributors-url]: https://github.com/AlexAlvarez092/SN-Capture-Records-Update-Set/graphs/contributors
 
