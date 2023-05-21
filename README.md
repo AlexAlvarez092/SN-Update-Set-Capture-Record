@@ -17,8 +17,7 @@ Features included:
 
 # Installation
 
-- Option 1. Cloning repository
-- Option 2. Committing [update set](./releases/capture_update_set_100.xml)
+- Option 1. Cloning repositoclonery
 
 [contributors-shield]: https://img.shields.io/github/contributors/AlexAlvarez092/SN-Capture-Records-Update-Set.svg?style=for-the-badge
 [contributors-url]: https://github.com/AlexAlvarez092/SN-Capture-Records-Update-Set/graphs/contributors
