@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2025-03-31 08:16:19">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Capture record</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>69139c3e8320221025f1e330ceaad34c</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2025-03-31 08:16:19</sys_created_on>
+<sys_id>238918b68360221025f1e330ceaad3f0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2025-03-31 08:16:19</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_09e410fe8320221025f1e330ceaad387</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Enable / disable the feature</description><ignore_cache>true</ignore_cache><is_private>false</is_private><name>capture_record.active</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-03-31 07:56:13</sys_created_on><sys_id>09e410fe8320221025f1e330ceaad387</sys_id><sys_mod_count>1</sys_mod_count><sys_name>capture_record.active</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_09e410fe8320221025f1e330ceaad387</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-03-31 07:56:21</sys_updated_on><type>boolean</type><value>true</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=09e410fe8320221025f1e330ceaad387"/></record_update>]]></payload>
+<payload_hash>-1064249909</payload_hash>
+<remote_update_set display_value="Capture record">238918b68360221025f1e330ceaad3f0</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2025-03-31 08:16:19</sys_created_on>
+<sys_id>278918b68360221025f1e330ceaad3f0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>195eb3397b20000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2025-03-31 08:16:19</sys_updated_on>
+<table/>
+<target_name>capture_record.active</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>8ff4d4beed2022102ebff0bdbdd8094b</update_guid>
+<update_guid_history>8ff4d4beed2022102ebff0bdbdd8094b:-1064249909,81f45cbe662022100a4e6d8b913928d7:1870468784</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_f90490be8320221025f1e330ceaad3c3</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;capture_record_list&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition&gt;captureRecords()&lt;/condition&gt;&lt;form_action&gt;false&lt;/form_action&gt;&lt;form_button&gt;false&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;false&lt;/format_for_configurable_workspace&gt;&lt;hint&gt;Capture the selected records in the current update set&lt;/hint&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;list_action&gt;true&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;true&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Capture in current Update Set&lt;/name&gt;&lt;onclick/&gt;&lt;order&gt;10000&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function captureRecords() {
+    var gaCapture = new GlideAjax('CaptureRecordUtils');
+    gaCapture.addParam('sysparm_name', 'clientBridge');
+    gaCapture.addParam('sysparm_sys_ids', g_list.getChecked());
+    gaCapture.addParam('sysparm_table_name', g_list.getTableName());
+    gaCapture.getXML();
+}]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-03-31 07:53:29&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;f90490be8320221025f1e330ceaad3c3&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Capture in current Update Set&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_f90490be8320221025f1e330ceaad3c3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-03-31 07:53:29&lt;/sys_updated_on&gt;&lt;table&gt;global&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1754770659</payload_hash>
+<remote_update_set display_value="Capture record">238918b68360221025f1e330ceaad3f0</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2025-03-31 08:16:19</sys_created_on>
+<sys_id>2b8918b68360221025f1e330ceaad3f1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>195eb30f8780000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2025-03-31 08:16:19</sys_updated_on>
+<table>global</table>
+<target_name>Capture in current Update Set</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>4d5418be14202210b43b577e7e4b22bc</update_guid>
+<update_guid_history>4d5418be14202210b43b577e7e4b22bc:-1754770659</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_5c1598fe8320221025f1e330ceaad336</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Commit changes before capture record</description><ignore_cache>true</ignore_cache><is_private>false</is_private><name>capture_record.commit_before</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-03-31 07:56:42</sys_created_on><sys_id>5c1598fe8320221025f1e330ceaad336</sys_id><sys_mod_count>0</sys_mod_count><sys_name>capture_record.commit_before</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_5c1598fe8320221025f1e330ceaad336</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-03-31 07:56:42</sys_updated_on><type>boolean</type><value>false</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=5c1598fe8320221025f1e330ceaad336"/></record_update>]]></payload>
+<payload_hash>108924267</payload_hash>
+<remote_update_set display_value="Capture record">238918b68360221025f1e330ceaad3f0</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2025-03-31 08:16:19</sys_created_on>
+<sys_id>2f8918b68360221025f1e330ceaad3f0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>195eb33ea6c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2025-03-31 08:16:19</sys_updated_on>
+<table/>
+<target_name>capture_record.commit_before</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>101598fe572022103c4f3e087f161839</update_guid>
+<update_guid_history>101598fe572022103c4f3e087f161839:108924267</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_3fb410fe8320221025f1e330ceaad382</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;capture_record_form&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;false&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition&gt;CaptureRecordUtils.refQualifier(current);&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;false&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;true&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;false&lt;/format_for_configurable_workspace&gt;&lt;hint&gt;Capture the current record in the current update set&lt;/hint&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Capture in current Update Set&lt;/name&gt;&lt;onclick/&gt;&lt;order&gt;10000&lt;/order&gt;&lt;script&gt;&lt;![CDATA[new CaptureRecordUtils().captureSingleRecord(current);]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-03-31 07:55:18&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;3fb410fe8320221025f1e330ceaad382&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Capture in current Update Set&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_3fb410fe8320221025f1e330ceaad382&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-03-31 07:55:18&lt;/sys_updated_on&gt;&lt;table&gt;global&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>583685734</payload_hash>
+<remote_update_set display_value="Capture record">238918b68360221025f1e330ceaad3f0</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2025-03-31 08:16:19</sys_created_on>
+<sys_id>678918b68360221025f1e330ceaad3f1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>195eb32a1570000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2025-03-31 08:16:19</sys_updated_on>
+<table>global</table>
+<target_name>Capture in current Update Set</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>33b410fec9202210866fc47c8a305d84</update_guid>
+<update_guid_history>33b410fec9202210866fc47c8a305d84:583685734</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_d3439c3e8320221025f1e330ceaad3b4</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.CaptureRecordUtils&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;CaptureRecordUtils&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var CaptureRecordUtils = Class.create();
+CaptureRecordUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    /**SNDOC
+      @name captureSingleRecord
+      @description Captures a GlideRecord in the current update set. Displays a success notification.
+      @param {GlideRecord} [grInputRecord] - The GlideRecord to be captured
+    */
+    captureSingleRecord: function(grRecord) {
+        this._captureRecord(grRecord);
+        this._displaySuccess();
+    },
+
+    /**SNDOC
+      @name captureMultipleRecords
+      @description Capture multiple GlideRecords in the current update set. Displays a success notification.
+      @param {String} [ids] - Comma-separated list of sys_id's
+      @param {String} [tableName] - Table which ids belong to
+    */
+    captureMultipleRecords: function(ids, tableName) {
+        var arrIDs = ids.split(',');
+        for (var i = 0; i &lt; arrIDs.length; i++) {
+            var grRecord = new GlideRecord(tableName);
+            grRecord.get(arrIDs[i]) ? this._captureRecord(grRecord) : null;
+        }
+        this._displaySuccess();
+    },
+
+    /**SNDOC
+      @name clientBridge
+      @description Client &lt;/&gt; Server interface. Calls server-side function captureMultipleRecords().
+    */
+    clientBridge: function() {
+        var ids = this.getParameter('sysparm_sys_ids');
+        var tableName = this.getParameter('sysparm_table_name');
+        this.captureMultipleRecords(ids, tableName);
+    },
+
+    /**SNDOC
+      @name _captureRecord
+      @description Capture the passed in record in the current update set for the logged-in user. If the system property 'capture_record.commit_before' value is true, updates the GlideRecord before committing.
+      @param {GlideRecord} [grInputRecord] - The GlideRecord to be captured
+      @private
+    */
+    _captureRecord: function(grRecord) {
+        // Commit changes before capture
+        gs.getProperty('capture_record.commit_before', 'false') === 'true' ? grRecord.update() : null;
+
+        // Push the record into the update set
+        new GlideUpdateManager2().saveRecord(grRecord);
+    },
+
+    /**SNDOC
+      @name _displaySuccess
+      @description Display a success notification containing the current update set name and link. Uses the UI message 'capture_record.success'.
+      @private
+    */
+    _displaySuccess: function() {
+        // Get current update set
+        var currentUpdateSetId = gs.getPreference('sys_update_set');
+        var grUpdateSet = new GlideRecord('sys_update_set');
+        grUpdateSet.get(currentUpdateSetId);
+
+        // Display info message
+        var msg = gs.getMessage('capture_record.success', [grUpdateSet.getDisplayValue(), grUpdateSet.getLink()]);
+        gs.addInfoMessage(msg);
+    },
+
+    type: 'CaptureRecordUtils'
+});
+
+CaptureRecordUtils.refQualifier = function(grRecord) {
+    // Feature enabled/disabled
+    if (gs.getProperty('capture_record.active', 'false') !== 'true') {
+        return false;
+    }
+
+    // Extends sys_metadata
+    grDatabase = new GlideRecord('sys_db_object');
+    grDatabase.get('name', grRecord.getTableName());
+
+    if (gs.getProperty('capture_record.exclude_app_file', 'true') === 'true' &amp;&amp; grDatabase.super_class.name.toString() === 'sys_metadata') {
+        return false;
+    }
+
+    return true;
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-03-31 07:50:09&lt;/sys_created_on&gt;&lt;sys_id&gt;d3439c3e8320221025f1e330ceaad3b4&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;CaptureRecordUtils&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_d3439c3e8320221025f1e330ceaad3b4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-03-31 08:14:51&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;d3439c3e8320221025f1e330ceaad3b4&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-03-31 07:50:09&lt;/sys_created_on&gt;&lt;sys_id&gt;4493547e8320221025f1e330ceaad388&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-03-31 07:50:09&lt;/sys_updated_on&gt;&lt;table&gt;sys_script_include&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1109889288</payload_hash>
+<remote_update_set display_value="Capture record">238918b68360221025f1e330ceaad3f0</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2025-03-31 08:16:19</sys_created_on>
+<sys_id>a38918b68360221025f1e330ceaad3f1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>195eb4487790000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2025-03-31 08:16:19</sys_updated_on>
+<table/>
+<target_name>CaptureRecordUtils</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid>c6391c36bc602210f927345644f18696</update_guid>
+<update_guid_history>c6391c36bc602210f927345644f18696:1109889288,b87410fe5b2022102c7875e12e66e97e:234715616,87d350becb2022107973b3b3b81e7835:867472887,5493983ea52022100f67db90a4a14ac6:2009616656</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_message_863550328360221025f1e330ceaad325</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message"><sys_ui_message action="INSERT_OR_UPDATE"><application/><code/><commented_message/><key>capture_record.success</key><language>en</language><message>Record(s) captured in &lt;a href="/{1}"&gt;{0}&lt;/a&gt; update set.</message><sys_class_name>sys_ui_message</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-03-31 07:57:32</sys_created_on><sys_id>863550328360221025f1e330ceaad325</sys_id><sys_mod_count>0</sys_mod_count><sys_name>capture_record.success</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_message_863550328360221025f1e330ceaad325</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-03-31 07:57:32</sys_updated_on></sys_ui_message></record_update>]]></payload>
+<payload_hash>-1528444267</payload_hash>
+<remote_update_set display_value="Capture record">238918b68360221025f1e330ceaad3f0</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2025-03-31 08:16:19</sys_created_on>
+<sys_id>eb8918b68360221025f1e330ceaad3f1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>195eb34ab6e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2025-03-31 08:16:19</sys_updated_on>
+<table/>
+<target_name>capture_record.success</target_name>
+<type>Message</type>
+<update_domain>global</update_domain>
+<update_guid>50459032dc6022107c4a6c1855596c3c</update_guid>
+<update_guid_history>50459032dc6022107c4a6c1855596c3c:-1528444267</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_e12598fe8320221025f1e330ceaad33c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Include / Exclude tables extending Application File</description><ignore_cache>true</ignore_cache><is_private>false</is_private><name>capture_record.exclude_app_file</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-03-31 07:57:04</sys_created_on><sys_id>e12598fe8320221025f1e330ceaad33c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>capture_record.exclude_app_file</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_e12598fe8320221025f1e330ceaad33c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-03-31 07:57:04</sys_updated_on><type>boolean</type><value>true</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=e12598fe8320221025f1e330ceaad33c"/></record_update>]]></payload>
+<payload_hash>349080952</payload_hash>
+<remote_update_set display_value="Capture record">238918b68360221025f1e330ceaad3f0</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2025-03-31 08:16:19</sys_created_on>
+<sys_id>ef8918b68360221025f1e330ceaad3f0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>195eb3440a70000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2025-03-31 08:16:19</sys_updated_on>
+<table/>
+<target_name>capture_record.exclude_app_file</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>a52598fe7f2022109ec14846fd358f3e</update_guid>
+<update_guid_history>a52598fe7f2022109ec14846fd358f3e:349080952</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
